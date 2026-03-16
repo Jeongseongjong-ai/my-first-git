@@ -3,11 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>나의 첫 깃허브 프로젝트</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>안산대 짬바 + 성결대 이론 + AI 콜라보</h1>
-    <button id="btn">클릭해봐!</button>
-    <p id="message"></p>
+    <div class="app">
+        <header class="app-header">
+            <div>
+                <h1 class="app-title">안산대 짬바 + 성결대 이론 + AI 콜라보</h1>
+                <p class="app-subtitle">지금부터는 다크모드까지 정복해보자 ⚡</p>
+            </div>
+            <div class="theme-toggle" aria-label="테마 전환">
+                <span class="theme-toggle-label">theme</span>
+                <button id="theme-toggle" class="toggle" type="button" aria-pressed="false">
+                    <span class="toggle-track-icons">
+                        <span>☀️</span>
+                        <span>🌙</span>
+                    </span>
+                    <span class="toggle-knob" aria-hidden="true">☀️</span>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <button id="btn" class="primary-button">
+                클릭해봐!
+                <span>🚀</span>
+            </button>
+            <p id="message" class="message"></p>
+        </main>
+    </div>
 
     <script src="app.js"></script>
 </body>
